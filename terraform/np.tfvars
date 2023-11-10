@@ -2,7 +2,7 @@ env = "np"
 
 project_id = "fabled-variety-403701"
 
-project_name = "My First Project"
+project_name = "fabled-variety"
 
 project_number = "401096858735"
 
