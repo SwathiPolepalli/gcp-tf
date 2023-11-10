@@ -12,9 +12,7 @@ steps:
     env:
       - "TF_VAR_project-name=${PROJECT_ID}"
       - "TF_LOG=${_TF_LOG}" 
-    volumes:
-    - name: 'ssh'
-      path: /root/.ssh
+    
 
 substitutions:
     _KEY_PROJECT: fabled-variety-403701
