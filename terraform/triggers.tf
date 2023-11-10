@@ -13,14 +13,14 @@ resource "google_cloudbuild_trigger" "tools-tf-apply-trigger" {
     _DIR                   = "."
     _TF_COMMAND            = "apply"
     _TF_OPTIONS            = "-auto-approve"
-    _VAR_FILE              = format("%s.tfvars", var.env_tag)
+    _VAR_FILE              = format("%s.tfvars", var.env)
   }
 
   github {
     owner = "telus"
     name  = local.github_repo
     push {
-      tag = format("orbit-%s.[v*]", var.env_tag)
+      tag = format("orbit-%s.[v*]", var.env)
     }
   }
 }
