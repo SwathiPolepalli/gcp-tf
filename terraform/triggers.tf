@@ -1,19 +1,4 @@
-# Plan Triggers
-resource "google_cloudbuild_trigger" "<internal-any-name>" {
-  project     = var.project_id
-  name        = "<trigger-name>"
-  description = "<purpose of this trigger>"source_to_build {
-    uri       = "https://github.com/<company-name>/<repo-name>"
-    ref       = "refs/heads/master"
-    repo_type = "GITHUB"
-  }
-  git_file_source {
-    path      = "path/to/cloudbuild.yaml"
-    uri       = "https://github.com/<company-name>/<repo-name>"
-    revision  = "refs/heads/master"
-    repo_type = "GITHUB"
-  }
-}
+
 
 # Apply Triggers
 resource "google_cloudbuild_trigger" "tools-tf-apply-trigger" {
