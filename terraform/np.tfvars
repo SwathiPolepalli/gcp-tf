@@ -1,9 +1,9 @@
 env = "np"
 
-project_id = "gcp-demo-proj-326120"
+project_id = "fabled-variety-403701"
 
-project_name = "gcp-demo-proj"
+project_name = "My First Project"
 
-project_number = "600975826904"
+project_number = "401096858735"
 
 region = "us-central1"
